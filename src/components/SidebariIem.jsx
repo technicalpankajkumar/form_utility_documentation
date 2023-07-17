@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 export default function SidebarItem({item}){
     const [open, setOpen] = useState(false)
 
-    
     if(item.childrens){
         return (
             <div className={open ? "sidebar-item open" : "sidebar-item"}>

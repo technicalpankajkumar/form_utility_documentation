@@ -1,11 +1,12 @@
-  
-  .sidebar{
+ .sidebar{
     width: 300px;
+    position: fixed;
+    top: 80px;
     flex-shrink: 0;
     background-color: rgb(255, 250, 250);
-    height:100vh;
+    height:100%;
     overflow:auto;
-    box-shadow:0px 10px 3px 0px rgb(69, 69, 69) ;
+    box-shadow: 0px 5px 3px 0px rgb(69, 69, 69) ;
   }
   .sidebar-item{
     padding: .75em 1em;
@@ -53,4 +54,17 @@
   .sidebar-item.plain i{
     display: inline-block;
     width: 1.7em;
+  }
+
+  @media screen and (max-width:480px) {
+     .sidebar{
+          position: absolute !important;
+          top:0px;
+          z-index: 1;
+     }
+     .bi-x-lg{
+         display: block;
+         float: right;
+         font-size: 1.2em;
+     }
   }

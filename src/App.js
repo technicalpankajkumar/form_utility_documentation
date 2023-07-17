@@ -14,6 +14,7 @@ import Checkbox from "./components/Form_Utility/Checkbox"
 import Radio from "./components/Form_Utility/Radio"
 import Support from "./components/User_Report/Support"
 import ReportBugs from "./components/User_Report/ReportBugs"
+import Navbar from "./components/Navbar"
 function App() {
   return (
     <BrowserRouter>
@@ -33,6 +34,7 @@ function App() {
             <Route path="support" element={<Support />}/>
             <Route path="report-bugs" element={<ReportBugs />}/>
         </Route>
+        <Route path="/" element={<Navbar />} />
       </Routes>
     </BrowserRouter>
    

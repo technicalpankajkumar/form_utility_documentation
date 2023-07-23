@@ -19,7 +19,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/form-utility" element={ <Layout />}>
+        <Route path="/form-utility" element={ <Layout/>}>
             <Route path="installation" element={<Installation />} />
             <Route path="field" element={<Field />} />
             <Route path="label" element={<Label />} />
@@ -34,7 +34,6 @@ function App() {
             <Route path="support" element={<Support />}/>
             <Route path="report-bugs" element={<ReportBugs />}/>
         </Route>
-        <Route path="/" element={<Navbar />} />
       </Routes>
     </BrowserRouter>
    

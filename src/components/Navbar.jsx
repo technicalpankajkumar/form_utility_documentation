@@ -5,7 +5,7 @@ import { DataContextAPI } from '../Layout'
 
 function Navbar() {
   const contextAPI = useContext(DataContextAPI)
-
+  console.log(contextAPI)
   return (
     <div className='navbar'>
       <nav className='nav'>

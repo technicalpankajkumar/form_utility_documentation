@@ -9,7 +9,7 @@
 }
 
 .navbar .navbar-title{
-    font-size: 2em;
+    font-size: 1.7em;
     padding-left: 10px;
 }
 .navbar .nav ul {
@@ -41,6 +41,30 @@
 }
 
 /* media query start */
+@media screen and (max-width: 780px) and (min-width:481px) {
+  .navbar .nav{
+    justify-content: space-around;
+  }
+    .navbar .navbar-title{
+        font-size: 1.1em ;
+        padding: 0px ;
+   }
+   .navbar .nav ul {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.navbar .nav ul li {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.bi-code-square{
+    display: none;
+}
+.navbar .nav ul li a {
+    padding: 5px;
+}
+
+}
 @media screen and (max-width:480px) {
     .navbar{
       height: 50px;
